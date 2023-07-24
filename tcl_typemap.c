@@ -170,7 +170,7 @@ int pdatom_to_tcl(t_atom *input, Tcl_Obj **output) {
         }
     }
 #if 0
-    verbose(-1, "tclpd: pdatom_to_tcl: atom [type = %s, value = %s]",
+    logpost(0, PD_VERBOSE, "tclpd: pdatom_to_tcl: atom [type = %s, value = %s]",
         Tcl_GetStringFromObj(tcl_t_atom[0], 0),
         Tcl_GetStringFromObj(tcl_t_atom[1], 0));
 #endif
