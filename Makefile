@@ -46,7 +46,7 @@ $(wildcard extra/*)
 all:
 
 tcl_wrap.c: tclpd.i tclpd.h Makefile
-	swig -v -tcl -o tcl_wrap.c -I$(PDDIR)/src tclpd.i
+	swig -v -tcl -o tcl_wrap.c -I$(pdincludepath) tclpd.i
 
 PDLIBBUILDER_DIR=pd-lib-builder/
 include $(PDLIBBUILDER_DIR)/Makefile.pdlibbuilder
